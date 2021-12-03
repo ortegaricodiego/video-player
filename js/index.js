@@ -23,14 +23,14 @@ $backward.addEventListener('click', handleBackard)
 
 function handleBackard(){
     $video.currentTime = $video.currentTime - 10
-    console.log('para atras 10 seg', $video.currentTime)
+    
 }
 
 $forward.addEventListener('click', handleForward)
 
 function handleForward(){
     $video.currentTime = $video.currentTime + 10
-    console.log('para adelante 10 seg', $video.currentTime)
+    
 }
 
 const $progress = document.querySelector('#progress')
@@ -50,5 +50,5 @@ $progress.addEventListener('input', handleInput)
 
 function handleInput(){
     $video.currentTime = $progress.value
-    console.log($progress.value)
+    
 }
